@@ -1,0 +1,339 @@
+html{
+	background: #47423F;
+}
+
+body{
+	width: 98%;
+	min-height: 500px;
+	margin: 0 auto;
+	border: 1px solid black;
+	margin-top: 15px;
+	background: #47423F;
+}
+
+#container{
+	background: #FFFFFF;
+}
+
+#top{
+	width: 100%;
+	height: 150px;
+	border-bottom: 1px dotted black;
+	position: relative;
+}
+
+#middle{
+	width: 100%;
+	min-height: 400px;
+	padding: 30px 0px;
+	border-bottom: 1px dashed black;
+}
+
+#footer{
+	width: 100%;
+	height: 110px;
+	text-align: center;
+}
+
+#logo{
+	height: 150px;
+	width: 300px;
+}
+
+#logo img{
+	width: 100%;
+}
+
+#topad{
+	height: 100px;
+	background: green;
+}
+
+#top_right{
+	position: absolute;
+	top: 0px;
+	left: 300px;
+	right: 0px;
+	height: 150px;
+}
+
+#mobile_top{
+	display: none;
+	position: relative;
+	width: 100%;
+}
+
+#tablet_top{
+	display: none;
+	position: relative;
+	width: 100%;
+}
+
+#nav{
+	width: 100%;
+	height: 50px;
+	background-color: #84978F;
+}
+
+#nav ul{
+	margin: 0 auto;
+	padding: 15px;
+	width: 600px;
+}
+
+#nav li{
+	float: left;
+	list-style: none;
+	margin-left: 25px;
+}
+
+#nav li a{
+	color: #47423F;
+	text-decoration: none;
+	font-size: 21px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 460px){
+	#mobile_top{
+		display: block;
+	}
+	
+	#logo{
+		height: auto;
+		width: 100%;
+		font-size: 0px;
+	}
+	
+	#topad{
+		width: 100%;
+		min-height: 50px;
+		height: auto;
+		background: green;
+	}
+	
+	#top{
+		display: none;
+	}
+	
+	#nav{
+		width: 100%;
+		height: 50px;
+		background-color: #84978F;
+	}
+	
+	#nav ul{
+		margin: 0 auto;
+		padding: 15px;
+		width: auto;
+	}
+	
+	#nav li{
+		float: left;
+		list-style: none;
+		margin-left: 25px;
+	}
+	
+	#nav li a{
+		color: #47423F;
+		text-decoration: none;
+		font-size: 21px;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+}
+
+#top_memes{
+	width: 95%;
+	min-width: 300px;
+	height: auto;
+	margin: 0 auto;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+/* Desktop view */
+
+@media screen and (min-width: 769px){
+	#top_memes{
+		min-width: 900px;
+	}
+}
+
+/* Tablet view */
+
+@media screen and (min-width: 461px) and (max-width: 768px){
+	#top{
+		display: none;
+	}
+	
+	#tablet_top{
+		display: block;
+	}
+	
+	#nav{
+		width: 100%;
+	}
+	
+	#nav ul{
+		width: 450px;
+	}
+	
+	#topad{
+		position: absolute;
+		top: 0px;
+		left: 300px;
+		height: 150px;
+		right: 0px;
+	}
+}
+
+.spotlight_list{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.spotlight_list_item{
+	width: 275px;
+	height: 250px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	float: left;
+	text-align: center;
+	background-color: grey;
+}
+
+.spotlight_list_item:first-child{
+	margin-left: 17.5px;
+}
+
+#create_tools{
+	width: 30%;
+	height: 375px;
+	border: 1px solid black;
+	margin-left: 7%;
+	float: left;
+	text-align: center;
+}
+
+#create_image{
+	width: 500px;
+	margin-left: 4%;
+	float: left;
+}
+
+.create_input{
+	width: 90%;
+	margin: 10px 0px;
+	border-radius: 0;
+}
+
+.create_select{
+	width: 90%;
+	margin: 10px 0px;
+	border-radius: 0;
+}
+
+#create_share{
+	width: 90%;
+}
+
+.clearfix{
+	clear: both;
+}
+
+
+.button{
+	border: 3px solid grey;
+	background-color: #47423F;
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	height: 30px;
+	display: inline;
+	padding: 5px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+#addmemecontainer{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;	
+}
+
+#addmemeright{
+	width: 42%;
+	padding-top: 150px;
+	height: 300px;
+	float: right;
+	text-align: center;
+	margin-right: 20px;
+}
+
+#addmemeleft{
+	display: block;
+	width: 50%;
+	max-width: 500px;
+	min-height: 450px;
+	margin-left: 20px;
+	float: left;
+	border: 3px dashed black;
+	background: lightgrey;
+	text-align: center;
+	font-family: Times, Times New Roman, serif;
+	color: white;
+	font-size: 30px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 760px){
+	#addmemeright{
+		width: 95%;
+		padding-top: 20px;
+		height: 300px;
+		float: left;
+		margin-left: 2%;
+		text-align: center;
+	}
+	
+	#addmemeleft{
+		width: 95%;
+		min-height: 75px;
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-top: 15px;
+		border: 3px dashed black;
+		background: lightgrey;
+		text-align: center;
+		font-family: Times, Times New Roman, serif;
+		color: white;
+		font-size: 30px;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: moz-none;
+		-ms-user-select: none;
+		user-select: none;
+		cursor: pointer;
+	}
+}
+
+#addmemeleft img{
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
